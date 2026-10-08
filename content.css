@@ -1,0 +1,28 @@
+#ytgl-panel{position:fixed;right:16px;bottom:16px;z-index:99999;width:300px;background:rgba(20,20,20,.92);color:#fff;font:13px/1.4 system-ui,sans-serif;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.5);user-select:none}
+#ytgl-panel *{box-sizing:border-box}
+#ytgl-head{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;cursor:move;font-weight:600}
+#ytgl-head button{background:none;border:0;color:#fff;cursor:pointer;font-size:16px}
+#ytgl-body{padding:0 10px 10px}
+#ytgl-panel.min #ytgl-body{display:none}
+.ytgl-sec{border-top:1px solid #444;padding-top:8px;margin-top:8px}
+.ytgl-row{display:flex;gap:6px;align-items:center;margin:4px 0}
+.ytgl-row>label{flex:0 0 36px;color:#aaa}
+.ytgl-row input[type=range]{flex:1}
+.ytgl-row input[type=number]{width:60px;background:#333;color:#fff;border:1px solid #555;border-radius:4px;padding:2px 4px}
+#ytgl-panel button.b{white-space:nowrap;background:#3a3a3a;color:#fff;border:0;border-radius:5px;padding:4px 8px;cursor:pointer}
+#ytgl-panel button.b:hover{background:#505050}
+#ytgl-panel button.on{background:#e53935}
+.ytgl-t{font-variant-numeric:tabular-nums;min-width:52px;text-align:center}
+#ytgl-beats{display:flex;gap:4px;margin:6px 0}
+#ytgl-beats i{flex:1;height:8px;border-radius:4px;background:#444}
+#ytgl-beats i.hit{background:#4caf50}
+#ytgl-beats i.hit.first{background:#ffb300}
+.ytgl-hint{color:#888;font-size:11px;margin-top:6px}
+#ytgl-head>span:last-child{display:flex;align-items:center}
+#ytgl-panel #ytgl-lang{font-size:12px;border:1px solid #777;border-radius:4px;padding:1px 6px;margin-right:6px}
+#ytgl-panel.gone{display:none}
+#ytgl-fab{display:none;position:fixed;right:16px;bottom:16px;z-index:99999;width:40px;height:40px;border-radius:50%;border:2px solid transparent;background:#e53935;color:#fff;font:700 22px/1 system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.5);padding:0}
+#ytgl-fab.show{display:block}
+#ytgl-fab:hover{filter:brightness(1.15)}
+#ytgl-fab.active{border-color:#fff;animation:ytglpulse 1.6s ease-in-out infinite}
+@keyframes ytglpulse{50%{box-shadow:0 0 0 6px rgba(229,57,53,.35)}}
